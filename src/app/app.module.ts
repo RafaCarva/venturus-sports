@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RegistrationModule } from './registration/registration.module';
+import { UsersModule } from './users/users.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
