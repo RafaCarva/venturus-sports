@@ -1,1 +1,32 @@
-<p>users works!</p>
+<h1>Users</h1>
+
+<div>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Username</th>
+      <th scope="col">Name</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">City</th>
+      <th scope="col">Ride in group</th>
+      <th scope="col">Day of the week</th>
+      <th scope="col">Posts</th>
+      <th scope="col">Albums</th>
+      <th scope="col">Photos</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of usersObs$ | async; index as i">
+      <td>{{ user.username }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.address.city }}</td>
+      <td>{{ getRandomRideInGroupValue() }}</td>
+      <td>{{ getRandomDays() }}</td>
+      <td>{{ getTotalPostsByUser(user.id) }}</td>
+      <td>{{ getTotalAlbunsByUser(user.id) }}</td>
+      <td>{{ getTotalPhotosByAlbum(user.id) }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
