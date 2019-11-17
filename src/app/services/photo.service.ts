@@ -14,9 +14,14 @@ export class PhotoService {
   constructor(private http: HttpClient) { }
 
   public getPhotos(): Observable<Photo[]> {
-    return this.http.get<Photo[]>(this.urlPhotos)
-      .pipe(
-      //  tap(console.log)
-      );
+    return this.http.get<Photo[]>(this.urlPhotos);
   }
 }
+
+
+
+/*
+  public getPhotos(): Observable<Photo[]> {
+    return this.http.get<Photo[]>(this.urlPhotos);
+  }
+*/

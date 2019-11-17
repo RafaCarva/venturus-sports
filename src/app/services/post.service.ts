@@ -14,9 +14,9 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   getPosts(): Observable<Post[]> {
-    return this.http.get<Post[]>(this.urlPosts)
-      .pipe(
+    return this.http.get<Post[]>(this.urlPosts);
+     // .pipe(
       //  tap(console.log)
-      );
+     // );
   }
 }

@@ -9,6 +9,9 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { BreadcrumbComponent } from './design-components/breadcrumb/breadcrumb.component';
+import { HomeMinicardComponent } from './design-components/home-minicard/home-minicard.component';
+import { CardRegistrationComponent } from './registration/card-registration/card-registration.component';
+import { NewUserRegistratorComponent } from './registration/new-user-registrator/new-user-registrator.component';
 
 const appRouters: Routes = [
   {path: 'users', component: UsersComponent},
@@ -17,22 +20,22 @@ const appRouters: Routes = [
   {path: '**', component: PageNotFoundComponent},
 ];
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     PersonRegistrationComponent,
     PageNotFoundComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    HomeMinicardComponent,
+    CardRegistrationComponent,
+    NewUserRegistratorComponent
   ],
   imports: [
     BrowserModule,
-
-    // AppRoutingModule,
      RouterModule.forRoot(appRouters),
-     HttpClientModule
+     HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

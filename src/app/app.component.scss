@@ -1,0 +1,14 @@
+@import "../sass/variables";
+
+.mainIcon {
+  color: white;
+  padding-top: 5px ;
+  padding-left: 5px;
+}
+.iconBox {
+  background-color: $base-color;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}

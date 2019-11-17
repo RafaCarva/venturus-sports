@@ -40,19 +40,19 @@ export class UsersComponent implements OnInit {
   }
 
   getTotalPostsByUser(id: number): number {
-    let totalPosts: number = 0;
+    let totalPosts = 0;
     this.allPosts.forEach((value) => { if (value.userId === id) { totalPosts++; } });
     return totalPosts;
   }
 
   getTotalAlbunsByUser(id: number): number {
-    let totalAlbuns: number = 0;
+    let totalAlbuns = 0;
     this.allAlbuns.forEach((value) => { if (value.userId === id) { totalAlbuns++; } });
     return totalAlbuns;
   }
 
   getTotalPhotosByAlbum(id: number): number {
-    let totalPhotos: number = 0;
+    let totalPhotos = 0;
     this.allPhotos.forEach((value) => { if (value.albumId === id) { totalPhotos++; } });
     return totalPhotos;
   }

@@ -14,9 +14,9 @@ export class AlbumService {
   constructor(private http: HttpClient) { }
 
   public getAlbuns(): Observable<Album[]> {
-    return this.http.get<Album[]>(this.urlAlbuns)
-      .pipe(
+    return this.http.get<Album[]>(this.urlAlbuns);
+     // .pipe(
       //  tap(console.log)
-      );
+     // );
   }
 }
