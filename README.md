@@ -1,6 +1,9 @@
 # VenturusSports
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
+<br />
+Online project:<br />
+https://venturus-sports-47b73.firebaseapp.com/users
 
 ## Development server
 
